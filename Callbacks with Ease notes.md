@@ -1,18 +1,17 @@
-# Understand JavaScript Callback Functions and Use Them
+## Understand JavaScript Callback Functions and Use Them
 [Understand JavaScript Callback Functions and Use Them](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/)
 
 
-### A Callback is a function passed into another function
-This is a common use of a callback function in jQuery
-Here, an alert function is passed into the click function as a parameter
+### A "callback" is a function that's passed into another function as an argument.  
+### A function that takes one or more callbacks is a "higher-order function".  
+The higher-order function 'calls back' to the function passed in. 
 
+A common use of a callback function in jQuery
 
 ```js
   $( "#btn_1" ).click( () => alert( "Btn 1 Clicked" ) );  
 ```
-
-Here, an `alert()` function is passed into the `click()` function as an argument. 
-Whenever the element with an`id` of `btn_1` is clicked, the callback will fire. In this case the callback is `alert()` taking a string, 'Btn 1 Clicked'. When the `btn_1` is clicked, the browser alerts the message "Btn 1 Clicked".
+`alert()` is passed into the `click()` function as an argument (the "callback" — the function that `click()` calls back to). Whenever the element with an`id` of `btn_1` is clicked, the callback will fire. In this case the callback is `alert()` taking a string, 'Btn 1 Clicked'. When the `btn_1` is clicked, the browser alerts the message "Btn 1 Clicked".
 
 
 ### This is a classic example in basic JavaScript
